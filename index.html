@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dropdown Navigation Bar</title>
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!--     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<style>
+    html,
+    body {
+        position: relative;
+        height: 100%;
+    }
+
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 60%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        /* background: #fff; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+
+<body>
+
+    <div class="width90">
+        <div class="nav-wrapper">
+            <div class="nav-container">
+                <div id="top-search">
+                    <form action="">
+                        <div class="input-box">
+                            <span class="topser-icon">⚲</span>
+                            <input type="text" class="search" placeholder="Search...">
+                            <span id="topsercross-icon">✕</span>
+                        </div>
+                    </form>
+                </div>
+
+
+                <div class="header">
+                    <!-- <div class="logo">
+                        <a href="#">Ravi Web</a>
+                    </div> -->
+                    <div class="navbar">
+                        <ul id="menu">
+                            <li><a href="#" class="active">home</a></li>
+                            <li><a href="#">about</a></li>
+                            <li>
+                                <a href="#" class="droptoggle">Services <span class="down-arrow">🢓</span></a>
+
+                                <ul class="submanu">
+                                    <li><a href="#">Navigation Bar</a></li>
+                                    <li><a href="#">Website Design</a></li>
+                                    <li><a href="#">Form Design</a></li>
+                                    <li>
+                                        <a href="#" class="sub-sub-drop">More <span class="arrow-right">❯</span></a>
+
+                                        <ul class="sub-sub-menu">
+                                            <li><a href="#">Footer Design</a></li>
+                                            <li><a href="#">Card Desing</a></li>
+                                            <li><a href="#">Buttons</a></li>
+                                        </ul>
+
+                                    </li>
+                                </ul>
+
+
+                            </li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="ser-btn">
+                        <ul>
+                            <!-- <li><a href="#"><span id="ser-btn-icon">⚲</span></a></li> -->
+                            <!-- <li class="enquiry-bnt"><a href="#">Enquiry Now</a></li> -->
+                            <li id="bar-icon"><a href="#">☰</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="pic.png" alt=""></div>
+                <div class="swiper-slide"><img src="pic.png" alt=""></div>
+                <div class="swiper-slide"><img src="pic.png" alt=""></div>
+                <div class="swiper-slide"><img src="pic.png" alt=""></div>
+                <div class="swiper-slide"><img src="pic.png" alt=""></div>
+                <div class="swiper-slide"><img src="pic.png" alt=""></div>
+                <div class="swiper-slide"><img src="pic.png" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- About Us  -->
+        <div class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="section-head col-sm-12">
+                        <h4><span>Why Choose</span> Me?</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has
+                            been
+                            the industry's<br>standard dummy text ever since the 1500s, when an unknown book.</p>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-globe"></i></span>
+                            <h6>Modern Design</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                dolor
+                                Aenean massa.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="item"> <span class="icon feature_box_col_two"><i class="fa fa-anchor"></i></span>
+                            <h6>Creative Design</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                dolor
+                                Aenean massa.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="item"> <span class="icon feature_box_col_three"><i
+                                    class="fa fa-hourglass-half"></i></span>
+                            <h6>Your Photoshoping</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                dolor
+                                Aenean massa.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="item"> <span class="icon feature_box_col_four"><i class="fa fa-database"></i></span>
+                            <h6>Business Growth</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                dolor
+                                Aenean massa.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="item"> <span class="icon feature_box_col_five"><i class="fa fa-upload"></i></span>
+                            <h6>Market Strategy</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                dolor
+                                Aenean massa.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="item"> <span class="icon feature_box_col_six"><i class="fa fa-camera"></i></span>
+                            <h6>Retina Ready</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                dolor
+                                Aenean massa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Management -->
+
+
+        <section>
+            <h1 class="title">School Management</h1>
+            <div class="team-row">
+                <div class="member">
+                    <img src="https://images.unsplash.com/photo-1520409364224-63400afe26e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=658&q=80"
+                        alt="">
+                    <h2>Munish Kumar <br> Jain</h2>
+                    <p>Manager</p>
+                </div>
+                <div class="member">
+                    <img src="https://images.unsplash.com/photo-1480455624313-e29b44bbfde1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                        alt="">
+                    <h2>Anil Kumar br Rastaugi</h2>
+                    <p>President</p>
+                </div>
+                <div class="member">
+                    <img src="https://miro.medium.com/max/814/1*Ri024ZNn0dtXQDmswflYFw.jpeg" alt="">
+                    <h2>Manoj Kumar <br> Verma</h2>
+                    <p>Cashier</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- education  -->
+        <!-- <div class="Education-Web-Link">
+            <div class="box">
+                <div class="box1"><img src="pic.png" alt=""></div>
+                <div class="box1"><img src="pic.png" alt=""></div>
+                <div class="box1"><img src="pic.png" alt=""></div>
+                <div class="box1"><img src="pic.png" alt=""></div>
+                <div class="box1"><img src="pic.png" alt=""></div>
+                <div class="box1"><img src="pic.png" alt=""></div>
+                <div class="box1"><img src="pic.png" alt=""></div>
+                <div class="box1"><img src="pic.png" alt=""></div>
+                <div class="box1"><img src="pic.png" alt=""></div>
+                <div class="box1"><img src="pic.png" alt=""></div>
+                <div class="box1"><img src="pic.png" alt=""></div>
+                <div class="box1"><img src="pic.png" alt=""></div>
+            </div>
+        </div> -->
+
+        <section class="education-link">
+            <h1 class="title">Education Web Links</h1>
+            <div class="team-row">
+                <div class="member member1">
+                    <img class="img" src="./Education/nishta.png" alt="">
+                    <h2>NISHTHA</h2>
+                    <button class="moreinfo"><a href="#">MoreInfo</a></button>
+                </div>
+                <div class="member member1">
+                    <img class="img" src="./Education/diksha.png" alt="">
+                    <h2>DIKSHA</h2>
+                    <button class="moreinfo"><a href="#">MoreInfo</a></button>
+                </div>
+                <div class="member member1">
+                    <img class="img" src="./Education/shagun.png" alt="">
+                    <h2>SHAGUN</h2>
+                    <button class="moreinfo"><a href="#">MoreInfo</a></button>
+                </div>
+                <div class="member member1">
+                    <img class="img" src="./Education/nroer.png" alt="">
+                    <h2>NROER</h2>
+                    <button class="moreinfo"><a href="#">MoreInfo</a></button>
+                </div>
+                <div class="member member1">
+                    <img class="img" src="./Education/ndl.png" alt="">
+                    <h2>National Library</h2>
+                    <button class="moreinfo"><a href="#">MoreInfo</a></button>
+                </div>
+                <div class="member member1">
+                    <img class="img" src="pic.png" alt="">
+                    <h2>NISHTHA</h2>
+                    <button class="moreinfo"><a href="#">MoreInfo</a></button>
+                </div>
+                <div class="member member1">
+                    <img class="img" src="pic.png" alt="">
+                    <h2>NISHTHA</h2>
+                    <button class="moreinfo"><a href="#">MoreInfo</a></button>
+                </div>
+                <div class="member member1">
+                    <img class="img" src="pic.png" alt="">
+                    <h2>NISHTHA</h2>
+                    <button class="moreinfo"><a href="#">MoreInfo</a></button>
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+
+
+    <div class="contact-container">
+        <div class="content">
+            <div class="image-box">
+                <img src="pic.png" alt="">
+            </div>
+            <form action="#">
+                <div class="topic">Send us a message</div>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Enter your name</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Enter your email</label>
+                </div>
+                <div class="input-box">
+                    <input type="textaera" required>
+                    <label>Enter your email</label>
+                </div>
+                <div class="input-box">
+                    <input type="submit" value="Send Message">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>Company<span>logo</span></h3>
+
+            <p class="footer-links">
+                <a href="#" class="link-1">Home</a>
+
+                <a href="#">Blog</a>
+
+                <a href="#">Pricing</a>
+
+                <a href="#">About</a>
+
+                <a href="#">Faq</a>
+
+                <a href="#">Contact</a>
+            </p>
+
+            <p class="footer-company-name">Company Name © 2015</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+1.555.555.5555</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">support@company.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the company</span>
+                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
+                vehicula sit amet.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="./js/navbar.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+            },
+        });
+    </script>
+</body>
+
+</html>
